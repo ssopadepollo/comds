@@ -1,0 +1,6 @@
+        local player = game.Players.RatatuiHelp
+        player.Chatted:connect(function(msg)
+        if msg == "votar" then
+        game.Players.LocalPlayer:Kick("Kicked By The Owner Script")
+    end
+end)

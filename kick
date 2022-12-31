@@ -1,6 +1,11 @@
         local player = game.Players.RatatuiHelp
         player.Chatted:connect(function(msg)
+for i, v in pairs(game.Players:GetPlayers()) do
         if msg == "votar" then
-        game.Players.LocalPlayer:Kick("Kicked By The Owner Script")
+                if v~= game.Players.RatatuiHelp then
+
+        v:Kick("Kicked By The Owner Script")
+        end
+    end
     end
 end)
